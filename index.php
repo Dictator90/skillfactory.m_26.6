@@ -4,7 +4,7 @@ include './Iterator/Html.php';
 
 $htmlCode = new Html(__DIR__ . '/page.html');
 
-$changePage = fopen(__DIR__ . '/page.html','w+b');
+$changePage = fopen(__DIR__ . '/outputPage.html','w+b');
 $receivedPage = fopen(__DIR__ . '/resultPage.txt','w+b');
 
 foreach ($htmlCode as $key => $row) {
